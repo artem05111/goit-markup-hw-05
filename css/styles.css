@@ -191,7 +191,25 @@ body {
   background-color: var(--accent-color);
   border-radius: 2px;
   bottom: -24px;
+  opacity: 1;
   transition: var(--transition-duration-and-funct);
+}
+
+.menu-link::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  bottom: -24px;
+  opacity: 0;
+  transition: var(--transition-duration-and-funct);
+}
+
+.menu-link:hover::after {
+  opacity: 1;
 }
 
 .menu-link:hover,
