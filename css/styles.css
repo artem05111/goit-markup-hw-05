@@ -182,7 +182,7 @@ body {
   color: var(--accent-color);
 }
 
-.menu-link::after {
+.menu-link.current::after {
   position: absolute;
   display: block;
   content: "";
@@ -191,12 +191,7 @@ body {
   background-color: var(--accent-color);
   border-radius: 2px;
   bottom: -24px;
-  opacity: 0;
   transition: var(--transition-duration-and-funct);
-}
-
-.menu-link:hover::after {
-  opacity: 1;
 }
 
 .menu-link:hover,
